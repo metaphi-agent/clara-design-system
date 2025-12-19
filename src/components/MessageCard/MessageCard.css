@@ -1,0 +1,78 @@
+.clara-message-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  background: var(--clara-background-primary);
+  border-radius: 12px;
+  position: relative;
+}
+
+.clara-message-card--colored {
+  background: var(--clara-background-secondary);
+}
+
+.clara-message-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.clara-message-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.clara-message-card__headline {
+  font-family: var(--clara-font-family-primary);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--clara-text-primary);
+  margin: 0;
+}
+
+.clara-message-card__paragraph {
+  font-family: var(--clara-font-family-primary);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--clara-text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.clara-message-card__artwork {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clara-message-card--artwork-leading .clara-message-card__artwork {
+  order: -1;
+}
+
+.clara-message-card__dismiss {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--clara-text-tertiary);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.clara-message-card__dismiss:hover {
+  background: var(--clara-grey-200);
+  color: var(--clara-text-secondary);
+}
