@@ -2,6 +2,7 @@
   "name": "@clara/design-system",
   "version": "0.1.0",
   "description": "Clara Design System - React component library",
+  "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
