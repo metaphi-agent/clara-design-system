@@ -1,3 +1,6 @@
+/* Import Inter font - must be first */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 /**
  * Clara Design System - Global Styles
  */
@@ -85,6 +88,3 @@
 * {
   box-sizing: border-box;
 }
-
-/* Import Inter font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
