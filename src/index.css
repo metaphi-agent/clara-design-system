@@ -1,0 +1,260 @@
+@import "tailwindcss";
+
+/* Clara Design System - Design Tokens */
+:root {
+  /* Primary Colors - Blue */
+  --clara-blue-100: #F0F7FF;
+  --clara-blue-200: #D1E6FE;
+  --clara-blue-300: #A3CCFD;
+  --clara-blue-400: #52AFFC;
+  --clara-blue-500: #2071F9;
+  --clara-blue-600: #2071F9;
+  --clara-blue-700: #1A5CD4;
+  --clara-blue-800: #1447A8;
+  --clara-blue-900: #0D2E70;
+
+  /* Red */
+  --clara-red-100: #FFF0F0;
+  --clara-red-200: #FFD1D1;
+  --clara-red-300: #FFA3A3;
+  --clara-red-400: #FF5252;
+  --clara-red-500: #F92020;
+  --clara-red-600: #D41A1A;
+  --clara-red-700: #A81414;
+  --clara-red-800: #700D0D;
+  --clara-red-900: #400808;
+
+  /* Orange */
+  --clara-orange-100: #FFF7F0;
+  --clara-orange-200: #FFE6D1;
+  --clara-orange-300: #FFCCA3;
+  --clara-orange-400: #FF9F52;
+  --clara-orange-500: #F97120;
+  --clara-orange-600: #D45A1A;
+  --clara-orange-700: #A84614;
+  --clara-orange-800: #702E0D;
+  --clara-orange-900: #401A08;
+
+  /* Purple */
+  --clara-purple-100: #F7F0FF;
+  --clara-purple-200: #E6D1FF;
+  --clara-purple-300: #CCA3FF;
+  --clara-purple-400: #9F52FF;
+  --clara-purple-500: #7120F9;
+  --clara-purple-600: #5A1AD4;
+  --clara-purple-700: #4614A8;
+  --clara-purple-800: #2E0D70;
+  --clara-purple-900: #1A0840;
+
+  /* Yellow */
+  --clara-yellow-100: #FFFBF0;
+  --clara-yellow-200: #FFF3D1;
+  --clara-yellow-300: #FFE7A3;
+  --clara-yellow-400: #FFD152;
+  --clara-yellow-500: #F9B820;
+  --clara-yellow-600: #D49C1A;
+  --clara-yellow-700: #A87C14;
+  --clara-yellow-800: #70520D;
+  --clara-yellow-900: #403008;
+
+  /* Green */
+  --clara-green-100: #F0FFF7;
+  --clara-green-200: #D1FFE6;
+  --clara-green-300: #A3FFCC;
+  --clara-green-400: #52FF9F;
+  --clara-green-500: #20F971;
+  --clara-green-600: #1AD45A;
+  --clara-green-700: #14A846;
+  --clara-green-800: #0D702E;
+  --clara-green-900: #08401A;
+
+  /* Neutrals / Grey */
+  --clara-grey-50: #FAFAFA;
+  --clara-grey-100: #F5F5F5;
+  --clara-grey-200: #E8E8E8;
+  --clara-grey-300: #D9D9D9;
+  --clara-grey-400: #BFBFBF;
+  --clara-grey-500: #8C8C8C;
+  --clara-grey-600: #595959;
+  --clara-grey-700: #4B4B4B;
+  --clara-grey-800: #262626;
+  --clara-grey-900: #141414;
+
+  /* Background Colors */
+  --clara-bg-primary: #FFFFFF;
+  --clara-bg-secondary: #F0F6FE;
+  --clara-bg-tertiary: #F8F8F8;
+
+  /* Text Colors */
+  --clara-text-primary: #000000;
+  --clara-text-secondary: #4B4B4B;
+  --clara-text-tertiary: #8C8C8C;
+  --clara-text-inverted: #FFFFFF;
+
+  /* Border Colors */
+  --clara-border-light: #E8E8E8;
+  --clara-border-medium: #D9D9D9;
+  --clara-border-dark: #BFBFBF;
+
+  /* Button Colors */
+  --clara-btn-primary-bg: linear-gradient(180deg, #4187FF 0%, #2472F8 100%);
+  --clara-btn-primary-hover: linear-gradient(180deg, #2472F8 0%, #1A5CD4 100%);
+  --clara-btn-primary-text: #FFFFFF;
+  --clara-btn-secondary-bg: #F0F6FE;
+  --clara-btn-secondary-hover: #D1E6FE;
+  --clara-btn-secondary-text: #2071F9;
+  --clara-btn-tertiary-text: #2071F9;
+
+  /* Shadows */
+  --clara-shadow-sm: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  --clara-shadow-md: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  --clara-shadow-lg: 0px 8px 16px rgba(0, 0, 0, 0.12);
+  --clara-shadow-xl: 0px 16px 32px rgba(0, 0, 0, 0.15);
+
+  /* Border Radius */
+  --clara-radius-sm: 4px;
+  --clara-radius-md: 8px;
+  --clara-radius-lg: 12px;
+  --clara-radius-xl: 16px;
+  --clara-radius-2xl: 24px;
+  --clara-radius-full: 9999px;
+
+  /* Spacing */
+  --clara-spacing-xs: 4px;
+  --clara-spacing-sm: 8px;
+  --clara-spacing-md: 12px;
+  --clara-spacing-lg: 16px;
+  --clara-spacing-xl: 24px;
+  --clara-spacing-2xl: 32px;
+  --clara-spacing-3xl: 48px;
+
+  /* Typography */
+  --clara-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Font Sizes */
+  --clara-text-xs: 10px;
+  --clara-text-sm: 12px;
+  --clara-text-base: 14px;
+  --clara-text-md: 16px;
+  --clara-text-lg: 18px;
+  --clara-text-xl: 20px;
+  --clara-text-2xl: 24px;
+  --clara-text-3xl: 36px;
+  --clara-text-4xl: 48px;
+  --clara-text-5xl: 56px;
+
+  /* Line Heights */
+  --clara-leading-tight: 1.2;
+  --clara-leading-snug: 1.35;
+  --clara-leading-normal: 1.4;
+  --clara-leading-relaxed: 1.5;
+  --clara-leading-loose: 1.75;
+
+  /* Font Weights */
+  --clara-font-regular: 400;
+  --clara-font-medium: 500;
+  --clara-font-semibold: 600;
+  --clara-font-bold: 700;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--clara-font-family);
+  font-size: var(--clara-text-base);
+  line-height: var(--clara-leading-normal);
+  color: var(--clara-text-primary);
+  background-color: var(--clara-bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tailwind Theme Extensions */
+@theme {
+  /* Colors */
+  --color-clara-blue-100: #F0F7FF;
+  --color-clara-blue-200: #D1E6FE;
+  --color-clara-blue-300: #A3CCFD;
+  --color-clara-blue-400: #52AFFC;
+  --color-clara-blue-500: #2071F9;
+  --color-clara-blue-600: #2071F9;
+  --color-clara-blue-700: #1A5CD4;
+  --color-clara-blue-800: #1447A8;
+  --color-clara-blue-900: #0D2E70;
+
+  --color-clara-red-100: #FFF0F0;
+  --color-clara-red-200: #FFD1D1;
+  --color-clara-red-300: #FFA3A3;
+  --color-clara-red-400: #FF5252;
+  --color-clara-red-500: #F92020;
+  --color-clara-red-600: #D41A1A;
+  --color-clara-red-700: #A81414;
+  --color-clara-red-800: #700D0D;
+  --color-clara-red-900: #400808;
+
+  --color-clara-orange-100: #FFF7F0;
+  --color-clara-orange-200: #FFE6D1;
+  --color-clara-orange-300: #FFCCA3;
+  --color-clara-orange-400: #FF9F52;
+  --color-clara-orange-500: #F97120;
+  --color-clara-orange-600: #D45A1A;
+  --color-clara-orange-700: #A84614;
+  --color-clara-orange-800: #702E0D;
+  --color-clara-orange-900: #401A08;
+
+  --color-clara-purple-100: #F7F0FF;
+  --color-clara-purple-200: #E6D1FF;
+  --color-clara-purple-300: #CCA3FF;
+  --color-clara-purple-400: #9F52FF;
+  --color-clara-purple-500: #7120F9;
+  --color-clara-purple-600: #5A1AD4;
+  --color-clara-purple-700: #4614A8;
+  --color-clara-purple-800: #2E0D70;
+  --color-clara-purple-900: #1A0840;
+
+  --color-clara-yellow-100: #FFFBF0;
+  --color-clara-yellow-200: #FFF3D1;
+  --color-clara-yellow-300: #FFE7A3;
+  --color-clara-yellow-400: #FFD152;
+  --color-clara-yellow-500: #F9B820;
+  --color-clara-yellow-600: #D49C1A;
+  --color-clara-yellow-700: #A87C14;
+  --color-clara-yellow-800: #70520D;
+  --color-clara-yellow-900: #403008;
+
+  --color-clara-green-100: #F0FFF7;
+  --color-clara-green-200: #D1FFE6;
+  --color-clara-green-300: #A3FFCC;
+  --color-clara-green-400: #52FF9F;
+  --color-clara-green-500: #20F971;
+  --color-clara-green-600: #1AD45A;
+  --color-clara-green-700: #14A846;
+  --color-clara-green-800: #0D702E;
+  --color-clara-green-900: #08401A;
+
+  --color-clara-grey-50: #FAFAFA;
+  --color-clara-grey-100: #F5F5F5;
+  --color-clara-grey-200: #E8E8E8;
+  --color-clara-grey-300: #D9D9D9;
+  --color-clara-grey-400: #BFBFBF;
+  --color-clara-grey-500: #8C8C8C;
+  --color-clara-grey-600: #595959;
+  --color-clara-grey-700: #4B4B4B;
+  --color-clara-grey-800: #262626;
+  --color-clara-grey-900: #141414;
+
+  /* Font Family */
+  --font-family-clara: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Border Radius */
+  --radius-clara-sm: 4px;
+  --radius-clara-md: 8px;
+  --radius-clara-lg: 12px;
+  --radius-clara-xl: 16px;
+  --radius-clara-2xl: 24px;
+}
