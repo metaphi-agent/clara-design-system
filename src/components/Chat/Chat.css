@@ -1,0 +1,62 @@
+.clara-chat {
+  display: flex;
+  gap: var(--clara-spacing-md);
+  width: 100%;
+  max-width: 343px;
+}
+
+.clara-chat__avatar {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--clara-radius-round);
+  overflow: hidden;
+}
+
+.clara-chat__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--clara-spacing-md);
+  flex: 1;
+}
+
+.clara-chat__title-bullet {
+  width: 4px;
+  height: 4px;
+  border-radius: var(--clara-radius-round);
+  background-color: var(--clara-primary);
+}
+
+.clara-chat__message {
+  font-family: var(--clara-font-family-primary);
+  font-size: var(--clara-font-size-md);
+  line-height: 1.5;
+  color: var(--clara-text-primary);
+}
+
+.clara-chat__media {
+  width: 100%;
+  border-radius: var(--clara-radius-lg);
+  overflow: hidden;
+}
+
+.clara-chat__footer {
+  display: flex;
+  gap: var(--clara-spacing-sm);
+  align-items: center;
+}
+
+.clara-chat--request {
+  flex-direction: row-reverse;
+}
+
+.clara-chat--request .clara-chat__message {
+  background-color: var(--clara-primary);
+  color: var(--clara-text-on-primary);
+  padding: var(--clara-spacing-md);
+  border-radius: var(--clara-radius-lg);
+}
+
+.clara-chat--response .clara-chat__message {
+  padding: 0;
+}

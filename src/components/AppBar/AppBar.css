@@ -1,0 +1,43 @@
+.clara-app-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 375px;
+  height: 44px;
+  padding: var(--clara-spacing-sm) var(--clara-spacing-md);
+  background: linear-gradient(180deg, #FFFFFF 80.29%, rgba(255, 255, 255, 0) 100%);
+  border-bottom: 1px solid var(--clara-border);
+}
+
+.clara-app-bar__left {
+  display: flex;
+  align-items: center;
+  gap: var(--clara-spacing-md);
+}
+
+.clara-app-bar__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.clara-app-bar__title {
+  font-family: var(--clara-font-family-primary);
+  font-size: var(--clara-font-size-lg);
+  font-weight: 600;
+  color: var(--clara-text-primary);
+  margin: 0;
+}
+
+.clara-app-bar__cta {
+  display: flex;
+  align-items: center;
+}
+
+.clara-app-bar--navigation {
+  background: var(--clara-background-primary);
+}

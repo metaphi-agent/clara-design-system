@@ -1,0 +1,24 @@
+import '../src/styles/global.css';
+
+export const parameters = {
+  actions: { argTypesRegex: '^on[A-Z].*' },
+  controls: {
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
+    },
+  },
+  backgrounds: {
+    default: 'light',
+    values: [
+      {
+        name: 'light',
+        value: '#FFFFFF',
+      },
+      {
+        name: 'dark',
+        value: '#1F1F1F',
+      },
+    ],
+  },
+};

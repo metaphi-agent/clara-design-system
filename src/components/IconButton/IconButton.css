@@ -1,0 +1,71 @@
+.clara-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: var(--clara-font-size-lg);
+}
+
+/* Variants */
+.clara-icon-button--primary {
+  background-color: var(--clara-primary);
+  color: var(--clara-text-on-primary);
+}
+
+.clara-icon-button--secondary {
+  background-color: var(--clara-button-icon-secondary);
+  color: var(--clara-text-primary);
+}
+
+.clara-icon-button--tertiary {
+  background-color: transparent;
+  color: var(--clara-text-secondary);
+}
+
+/* Shapes */
+.clara-icon-button--round {
+  border-radius: var(--clara-radius-round);
+}
+
+.clara-icon-button--square {
+  border-radius: var(--clara-radius-md);
+}
+
+/* States */
+.clara-icon-button--hover:hover,
+.clara-icon-button:hover {
+  transform: scale(1.05);
+}
+
+.clara-icon-button--pressed:active,
+.clara-icon-button:active {
+  transform: scale(0.95);
+}
+
+.clara-icon-button--primary:hover {
+  background-color: var(--clara-primary-hover);
+}
+
+.clara-icon-button--primary:active {
+  background-color: var(--clara-primary-pressed);
+}
+
+.clara-icon-button--secondary:hover {
+  background-color: var(--clara-grey-200);
+}
+
+.clara-icon-button--secondary:active {
+  background-color: var(--clara-grey-300);
+}
+
+.clara-icon-button--disabled,
+.clara-icon-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
