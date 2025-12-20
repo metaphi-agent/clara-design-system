@@ -1,60 +1,27 @@
 {
-  "name": "@clara/design-system",
-  "version": "0.2.0",
-  "description": "Clara Design System - React component library based on Figma design system",
+  "name": "clara-design-system",
+  "version": "1.0.0",
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "clean": "rm -rf dist",
-    "prepublishOnly": "npm run clean && npm run build",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.0.0",
+    "framer-motion": "^11.0.0",
+    "lucide-react": "^0.460.0",
+    "clsx": "^2.1.0"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.0",
-    "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^11.0.0",
-    "@storybook/addon-essentials": "^7.6.0",
-    "@storybook/addon-interactions": "^7.6.0",
-    "@storybook/addon-links": "^7.6.0",
-    "@storybook/react": "^7.6.0",
-    "@storybook/react-vite": "^7.6.0",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "autoprefixer": "^10.4.23",
-    "postcss": "^8.4.0",
-    "rollup": "^3.29.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-postcss": "^4.0.2",
-    "storybook": "^7.6.0",
-    "tslib": "^2.6.0",
-    "typescript": "^5.0.0"
-  },
-  "keywords": [
-    "design-system",
-    "react",
-    "components",
-    "ui",
-    "clara",
-    "typescript",
-    "figma"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/metaphi-agent/clara-design-system.git"
-  },
-  "author": "Clara Design Team",
-  "license": "MIT"
+    "@vitejs/plugin-react": "^4.3.0",
+    "vite": "^6.0.0",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.6.0"
+  }
 }
