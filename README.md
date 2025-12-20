@@ -7,12 +7,41 @@
 
 A comprehensive React component library based on the [Clara Design System Figma file](https://www.figma.com/design/kOGAOM7xCcnGancqjYSfGD/Clara-Design-System).
 
+[Quick Start](#-quick-start) • [Components](#-components) • [Preview](#-local-preview) • [Documentation](#-documentation)
+
 </div>
+
+---
+
+## 🎯 Try it Locally
+
+**Run the interactive preview to see all components:**
+
+### Mac/Linux
+```bash
+git clone https://github.com/metaphi-agent/clara-design-system.git
+cd clara-design-system
+chmod +x setup-preview.sh
+./setup-preview.sh
+```
+
+### Windows
+```cmd
+git clone https://github.com/metaphi-agent/clara-design-system.git
+cd clara-design-system
+setup-preview.bat
+```
+
+**Opens at**: http://localhost:5173
+
+See **[QUICK_START.md](QUICK_START.md)** for detailed instructions.
+
+---
 
 ## ✨ Features
 
 - 🎨 **Figma-first**: Components directly mapped from Figma design system
-- 💅 **Type-safe**: Full TypeScript support with comprehensive type definitions
+- 💪 **Type-safe**: Full TypeScript support with comprehensive type definitions
 - 🎭 **Customizable**: Design tokens for easy theming
 - 📦 **Tree-shakeable**: Import only what you need
 - 📚 **Storybook**: Interactive component documentation
@@ -101,11 +130,6 @@ import { IconButton } from '@clara/design-system';
 <IconButton shape="square">×</IconButton>
 ```
 
-**Props**:
-- `variant`: `'primary' | 'secondary' | 'tertiary'`
-- `shape`: `'round' | 'square'`
-- `state`: `'default' | 'hover' | 'pressed' | 'disabled'`
-
 ---
 
 ### Card
@@ -126,13 +150,6 @@ import { Card } from '@clara/design-system';
 />
 ```
 
-**Props**:
-- `title`: `string` - Card title
-- `subtitle`: `string` - Optional subtitle
-- `showImage`: `boolean` - Display image
-- `showTags`: `boolean` - Display tags
-- `image`: `string` - Image URL
-
 ---
 
 ### TextField
@@ -151,13 +168,6 @@ import { TextField } from '@clara/design-system';
   error="Invalid email format"
 />
 ```
-
-**Props**:
-- `label`: `string` - Input label
-- `placeholder`: `string` - Placeholder text
-- `helperText`: `string` - Helper text below input
-- `error`: `string` - Error message
-- `disabled`: `boolean` - Disable input
 
 ---
 
@@ -178,11 +188,6 @@ import { MessageCard } from '@clara/design-system';
   Your changes have been saved successfully.
 </MessageCard>
 ```
-
-**Props**:
-- `layout`: `'headline-paragraph' | 'headline-only'`
-- `style`: `'white' | 'colored'`
-- `showDismiss`: `boolean` - Show dismiss button
 
 ---
 
@@ -205,13 +210,6 @@ import { Chat } from '@clara/design-system';
 </Chat>
 ```
 
-**Props**:
-- `type`: `'request' | 'response'` - Message direction
-- `avatar`: `ReactNode` - User/bot avatar
-- `showMedia`: `boolean` - Display media content
-- `showFooter`: `boolean` - Display footer actions
-- `footer`: `ReactNode` - Footer content
-
 ---
 
 ### AppBar
@@ -230,13 +228,6 @@ import { AppBar } from '@clara/design-system';
   showCta
 />
 ```
-
-**Props**:
-- `title`: `string` - App bar title
-- `leftIcon`: `ReactNode` - Left navigation icon
-- `cta`: `ReactNode` - Right action button
-- `showCta`: `boolean` - Show CTA
-- `variant`: `'page-header' | 'navigation'`
 
 ---
 
@@ -269,11 +260,6 @@ function Example() {
 }
 ```
 
-**Props**:
-- `open`: `boolean` - Control sheet visibility
-- `onClose`: `() => void` - Close callback
-- `showOverlay`: `boolean` - Show backdrop overlay
-
 ---
 
 ## 🎨 Design Tokens
@@ -303,59 +289,41 @@ The design system uses CSS custom properties for theming. All tokens are extract
 }
 ```
 
-### Typography
+See **[docs/DESIGN_TOKENS.md](docs/DESIGN_TOKENS.md)** for complete token reference.
 
-```css
-:root {
-  /* Font Families */
-  --clara-font-family-primary: 'Inter', sans-serif;
-  --clara-font-family-secondary: 'Source Serif 4', serif;
-  
-  /* Font Sizes */
-  --clara-font-size-xs: 10px;
-  --clara-font-size-sm: 12px;
-  --clara-font-size-md: 14px;
-  --clara-font-size-lg: 16px;
-  --clara-font-size-xl: 20px;
-  --clara-font-size-xxl: 24px;
-}
+---
+
+## 👁️ Local Preview
+
+Run the interactive preview to explore all components:
+
+```bash
+# Quick setup
+./setup-preview.sh  # Mac/Linux
+setup-preview.bat   # Windows
+
+# Manual setup
+npm install && npm run build
+cd example && npm install && npm run dev
 ```
 
-### Spacing
+The preview includes:
+- ✅ All components with interactive demos
+- 🎨 Design tokens visualization
+- 📋 Figma component IDs
+- 🔄 Hot reload for instant updates
 
-```css
-:root {
-  --clara-spacing-xs: 4px;
-  --clara-spacing-sm: 8px;
-  --clara-spacing-md: 12px;
-  --clara-spacing-lg: 16px;
-  --clara-spacing-xl: 24px;
-  --clara-spacing-xxl: 32px;
-}
-```
+**Preview URL**: http://localhost:5173
 
-### Shadows
+---
 
-```css
-:root {
-  --clara-shadow-shallow: 0px 4px 16px rgba(0, 0, 0, 0.12);
-  --clara-shadow-medium: 0px 8px 24px rgba(0, 0, 0, 0.16);
-  --clara-shadow-deep: 0px 16px 48px rgba(0, 0, 0, 0.20);
-}
-```
+## 📚 Documentation
 
-### Border Radius
+- **[Integration Guide](docs/INTEGRATION_GUIDE.md)**: Setup for Vite, Next.js, CRA, Remix
+- **[Design Tokens](docs/DESIGN_TOKENS.md)**: Complete token reference
+- **[QUICK_START.md](QUICK_START.md)**: Local preview setup
 
-```css
-:root {
-  --clara-radius-sm: 4px;
-  --clara-radius-md: 8px;
-  --clara-radius-lg: 12px;
-  --clara-radius-xl: 16px;
-  --clara-radius-xxl: 32px;
-  --clara-radius-round: 9999px;
-}
-```
+---
 
 ## 📖 Storybook
 
@@ -365,7 +333,9 @@ Explore components interactively:
 npm run storybook
 ```
 
-This will open Storybook at `http://localhost:6006` with all components documented.
+Opens at `http://localhost:6006` with all components documented.
+
+---
 
 ## 🛠️ Development
 
@@ -386,17 +356,7 @@ npm run storybook
 npm run build-storybook
 ```
 
-## 📚 Example App
-
-An example app is included in the `example/` directory:
-
-```bash
-cd example
-npm install
-npm run dev
-```
-
-This will start a Vite dev server showcasing all components.
+---
 
 ## 🔗 Figma Integration
 
@@ -413,6 +373,8 @@ All components include Figma component IDs in their documentation for easy refer
 - **Shadows**: From Figma effect styles (ID: 228:1168)
 - **Components**: Direct implementations of Figma components
 
+---
+
 ## 📝 TypeScript Support
 
 Full TypeScript support with comprehensive type definitions:
@@ -425,11 +387,15 @@ const MyButton: React.FC<ButtonProps> = (props) => {
 };
 ```
 
+---
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
 
-## 📜 License
+---
+
+## 📄 License
 
 MIT © Clara Design Team
 
@@ -452,8 +418,8 @@ MIT © Clara Design Team
 
 <div align="center">
 
-Made with ♥️ by the Clara Design Team
+Made with ❤️ by the Clara Design Team
 
-[Documentation](https://github.com/metaphi-agent/clara-design-system) · [Report Bug](https://github.com/metaphi-agent/clara-design-system/issues) · [Request Feature](https://github.com/metaphi-agent/clara-design-system/issues)
+[Documentation](https://github.com/metaphi-agent/clara-design-system) • [Report Bug](https://github.com/metaphi-agent/clara-design-system/issues) • [Request Feature](https://github.com/metaphi-agent/clara-design-system/issues)
 
 </div>
